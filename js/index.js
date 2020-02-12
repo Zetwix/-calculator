@@ -13,7 +13,7 @@ function digitPresed(ev) {
 
 document.querySelectorAll('.opers button')
     .forEach ( button => button.addEventListener('click', opersPresed));
-
+    
 
 function opersPresed(ev) {
     display.value += ev.target.innerText;
@@ -35,13 +35,9 @@ function doro() {
     eval(display.value);
 }
 
-document.querySelector('.proc').addEventListener('click', doroty);
-    function doroty() {
-    display.value /= 100;
-    eval(display.value);
-}
+
 document.querySelector('.delete').addEventListener('click', deleted);
     function deleted() {
-        location.reload()
+        display.value = "";
     }
-  
+
