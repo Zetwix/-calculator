@@ -21,8 +21,9 @@ function opersPresed(ev) {
     display.value.slice(-1) === "+" ||
     display.value.slice(-1) === "*" ||
     display.value.slice(-1) === "/" ||
-    display.value.slice(-1) === "-" 
-  ) {
+    display.value.slice(-1) === "-" ||
+    display.value.slice(-1) === "."
+) {
     display.value =
       display.value.substring(0, display.value.length - 1) +
       ev.target.innerText;
