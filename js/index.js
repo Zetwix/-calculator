@@ -41,3 +41,7 @@ document.querySelector('.delete').addEventListener('click', deleted);
         display.value = "";
     }
 
+
+
+
+    
